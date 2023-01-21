@@ -33,8 +33,8 @@ CREATE TABLE public.dining_tables (
 CREATE TABLE public.food_menus (
 	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
 	"name" varchar NULL,
-	price money NULL,
-	current_price money NULL,
+	price numeric NULL,
+	current_price numeric NULL,
 	categories_id int4 NOT NULL,
 	CONSTRAINT food_menus_pk PRIMARY KEY (id),
 	CONSTRAINT food_menus_fk FOREIGN KEY (categories_id) REFERENCES public.categories(id)
@@ -49,7 +49,7 @@ CREATE TABLE public.food_menus (
 
 CREATE TABLE public.orders (
 	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
-	price money NOT NULL,
+	price numeric NOT NULL,
 	amount int4 NOT NULL DEFAULT 1,
 	dining_tables_id int4 NOT NULL,
 	food_menus_id int4 NOT NULL,
