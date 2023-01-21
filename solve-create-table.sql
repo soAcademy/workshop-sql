@@ -53,7 +53,7 @@ CREATE TABLE public.orders (
 	amount int4 NOT NULL DEFAULT 1,
 	dining_tables_id int4 NOT NULL,
 	food_menus_id int4 NOT NULL,
-	created_date date NOT NULL DEFAULT CURRENT_DATE,
+	created_date timestamp NOT NULL DEFAULT (now() AT TIME ZONE 'UTC'::text),
 	CONSTRAINT orders_pk PRIMARY KEY (id),
 	CONSTRAINT orders_dining_tables_fk FOREIGN KEY (dining_tables_id) REFERENCES public.dining_tables(id),
 	CONSTRAINT orders_food_menus_fk FOREIGN KEY (food_menus_id) REFERENCES public.food_menus(id)
