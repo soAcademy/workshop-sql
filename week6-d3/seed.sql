@@ -153,3 +153,31 @@ INSERT INTO public.categories ("name") VALUES
 	 ('dev'),
 	 ('management'),
 	 ('food');
+
+--- courses
+
+INSERT INTO public.courses ("name",price,start_date,end_date,student_max,categories_id,teachers_id) VALUES
+	 ('full-stack-101 รอบที่ 1',12000,'2023-09-02','2023-09-05',40,1,2),
+	 ('full-stack-101 รอบที่ 2',20000,'2023-09-06','2023-09-09',70,1,2),
+	 ('flutter-101 รอบที่ 1',18000,'2023-09-06','2023-09-09',40,1,3),
+	 ('jira-101 รอบที่ 1',8000,'2023-09-02','2023-09-05',80,2,7);
+
+--- orders
+
+INSERT INTO public.orders (price,courses_id,members_id) VALUES
+	 (12000,1,1),
+	 (12000,1,2),
+	 (20000,2,1),
+	 (18000,3,4),
+	 (12000,1,4),
+	 (12000,1,5),
+	 (12000,1,6),
+	 (8000,4,8),
+	 (8000,4,10),
+	 (20000,2,11);
+INSERT INTO public.orders (price,courses_id,members_id) VALUES
+	 (20000,2,12),
+	 (20000,2,13),
+	 (20000,2,14),
+	 (20000,2,15),
+	 (20000,2,16);
