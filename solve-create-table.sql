@@ -34,7 +34,7 @@ CREATE TABLE public.food_menus (
 	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
 	"name" varchar NULL,
 	price numeric NULL,
-	current_price numeric NULL,
+	discount numeric NULL,
 	categories_id int4 NOT NULL,
 	CONSTRAINT food_menus_pk PRIMARY KEY (id),
 	CONSTRAINT food_menus_fk FOREIGN KEY (categories_id) REFERENCES public.categories(id)
