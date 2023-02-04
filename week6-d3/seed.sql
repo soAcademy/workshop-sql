@@ -123,28 +123,29 @@ VALUES
 
 INSERT INTO members (first_name,last_name,tel)
 VALUES
-  ('Alvin','Shad Leonard','09432146567'),
-  ('Kristen','Gareth Gray','07627763650'),
-  ('Gary','Xenos Faulkner','07866197146'),
-  ('Hiram','Serena Vincent','08172545243'),
-  ('Herman','Morgan Cantu','09411145843'),
-  ('Ezekiel','Aline Hampton','04387596188'),
-  ('Linda','Flavia Bell','02335776256'),
-  ('Kerry','Bo Workman','08586242171'),
-  ('Kathleen','Macy Wynn','01812863311'),
-  ('Benedict','Doris Gould','02537794295');
+  ('Alvin','Foreman','09432146567'),
+  ('Kristen','Stone','07627763650'),
+  ('Gary','Wall','07866197146'),
+  ('Hiram','George','08172545243'),
+  ('Herman','Berger','09411145843'),
+  ('Ezekiel','Woods','04387596188'),
+  ('Linda','Valenzuela','02335776256'),
+  ('Kerry','Pate','08586242171'),
+  ('Kathleen','Hunt','01812863311'),
+  ('Benedict','Pruitt','02537794295');
 INSERT INTO members (first_name,last_name,tel)
 VALUES
-  ('Robert','Jessica Benson','06845198580'),
-  ('Orla','Shaine Brewer','00982493883'),
-  ('Benedict','Gannon Hooper','04558931817'),
-  ('Wyoming','Wilma Marsh','04663163118'),
-  ('Ulla','Austin Gomez','06064553414'),
-  ('Elaine','Fulton Rodriquez','07950922124'),
-  ('Ursula','Kelly Pittman','07888274842'),
-  ('Troy','Fallon Burch','02538774533'),
-  ('Reed','Damian Chandler','02267852175'),
-  ('Chiquita','Ezekiel Boyer','06058736133');
+  ('Robert','Emerson','06845198580'),
+  ('Orla','Curry','00982493883'),
+  ('Benedict','Butler','04558931817'),
+  ('Wyoming','Rodriquez','04663163118'),
+  ('Ulla','Duran','06064553414'),
+  ('Elaine','Tucker','07950922124'),
+  ('Ursula','Alford','07888274842'),
+  ('Troy','Fuentes','02538774533'),
+  ('Reed','Rowland','02267852175'),
+  ('Chiquita','Guy','06058736133');
+
 
 --- categories
 
